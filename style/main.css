@@ -1,0 +1,232 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+body {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: rgb(36, 36, 36);
+}
+
+header {
+  width: 100%;
+  padding: 21px 50px;
+  box-sizing: border-box;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > img {
+  width: 55px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15%;
+}
+header i {
+  width: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+header i .cartItemCount {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+header i img {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+.menu {
+  width: 25%;
+  position: absolute;
+  left: -50%;
+  background-color: #fff;
+  padding: 0px 5px 10px;
+  height: 100%;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+}
+.menu.menuShow {
+  left: 0;
+  box-shadow: 19px 1px 22px 15px rgba(0, 0, 0, 0.29);
+}
+.menu .menuHead {
+  background-color: #000000;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.menu .menuOpcion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 15px;
+}
+.menu h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 25px 0px;
+}
+.menu section {
+  padding-bottom: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+.menu section > img {
+  width: 60px;
+}
+.menu section li {
+  font-size: 30px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.menu section li img {
+  width: 10%;
+  padding-right: 10px;
+}
+.menu section i {
+  width: 30px;
+  cursor: pointer;
+}
+.menu section i:hover {
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+.menu section i img {
+  width: 100%;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.products section {
+  flex-basis: 320px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products section img {
+  width: 100%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.products section img:hover {
+  transform: scale(1.1);
+}
+.products section h2 {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.products section p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+.products section p.red {
+  color: rgb(190, 0, 0);
+  font-weight: 600;
+}
+.products section p.blue {
+  color: rgb(0, 76, 190);
+  font-weight: 600;
+}
+.products .add {
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  margin: 5px 0px 5px;
+}
+.products .add:hover {
+  transform: scale(1.1);
+}
+
+.cart {
+  width: 20%;
+  position: absolute;
+  right: -50%;
+  top: 100px;
+  background-color: #fff;
+  padding: 20px;
+  height: auto;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+}
+.cart.show {
+  right: 0;
+}
+.cart h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0px;
+}
+.cart section {
+  padding-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart section > img {
+  width: 60px;
+  cursor: pointer;
+}
+.cart section h3 {
+  text-align: center;
+  font-size: 15px;
+  width: 120px;
+}
+.cart section p {
+  font-weight: 500;
+  font-size: 15px;
+}
+.cart section i {
+  width: 30px;
+  cursor: pointer;
+}
+.cart section i img {
+  width: 100%;
+}
+.cart button {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.cart button.toggle {
+  background-color: cadetblue;
+}/*# sourceMappingURL=main.css.map */

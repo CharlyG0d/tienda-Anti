@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/function.js" defer></script>
+
+    <title>DOM y Eventos</title>
+  </head>
+  <body>
+      <header>
+        <i>
+          <img src="img/menuWhite.svg" />
+        </i>
+          <img src="img/anti-logo.png" class="logo"/>
+        <i>
+          <img src="img/cart-white.svg" class="iconCart" />
+          <span class="cartItemCount">0</span>
+        </i>
+        
+      </header>
+      <main>
+        
+        <article class="menu">
+          <section class="menuHead">
+            <img src="img/anti-logo.png" class="logo"/>
+            <i> <img src="img/close.svg" class="close"></i>
+          </section>
+
+          <section class="menuOpcion">
+            <h2>Cuenta</h2>
+            <ul>
+            <li><img src="img/user.svg" alt="">Mi cuenta</li>
+            <li><img src="img/full-cart.svg" alt="">Mis compras</li>
+            <li> <img src="img/favorite.svg" alt="fav">Favoritos</li>
+            <li> <img src="img/configuracion.svg" alt="configuracion">Opciones</li>
+          </ul>
+          </section>
+        </article>
+        
+        <article class="products logo">
+          <section class="mouse">
+            <img src="img/skull.png" />
+            <h2 id="txt">Playera SKULL LIGHTING Lila</h2>
+            <p>$299.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/rompe-anti.png" />
+            <h2>Rompevientos Antitoon Vino</h2>
+            <p>$829.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/fake-anti.png" />
+            <h2>Playera Fake New Black</h2>
+            <p>$299.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/scream-anti.png" />
+            <h2>Rompevientos Scream II </h2>
+            <p>$829.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/chamarra-anti.png" />
+            <h2>Rompevientos Vino Marino</h2>
+            <p>$900.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/skate-anti.png" />
+            <h2>Playera Skate & Destroy Gris</h2>
+            <p>$299.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/univer-anti.png" />
+            <h2>Sudadera Universitaria Anti Gris</h2>
+            <p>$1,100.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/trip-anti.png" />
+            <h2>Playera TRIP OR TRICK</h2>
+            <p>$299.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/gorra-anti.png" />
+            <h2>Gorra Piramide</h2>
+            <p>$549.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+          <section>
+            <img src="img/calcetas-anti.png" />
+            <h2>Calceta Rabbits Verde</h2>
+            <p>$119.00</p>
+            <button class="add">Añadir a carrito</button>
+          </section>
+        </article>
+  
+        <article class="cart">
+          <h2>CARRITO</h2>
+          <section>
+            <img src="img/rompe-anti.png" />
+            <h3>Rompevientos Antitoon Vino</h3>
+            <p>$829.00</p>
+            <i class="remove"><img src="img/remove.svg" /></i>
+          </section>
+          <section>
+            <img src="img/fake-anti.png" />
+            <h3>Playera Fake New Black</h3>
+            <p>$299.00</p>
+            <i class="remove"><img src="img/remove.svg" /></i>
+          </section>
+          <button class="toggle">COMPRAR</button>
+        </article>
+      </main>
+    </body>
+  </html>
